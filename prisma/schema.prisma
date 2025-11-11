@@ -1,0 +1,18 @@
+generator jsClient {
+    provider        = "prisma-client"
+    previewFeatures = ["strictUndefinedChecks", "relationJoins"]
+    output          = "../src/generated"
+    engineType      = "client"
+    moduleFormat    = "esm"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = "postgres://postgres:postgres@localhost:5432/postgres"
+}
+
+model User {
+    id     Int        @id @default(autoincrement())
+    name   String?
+    events DateTime[]
+}

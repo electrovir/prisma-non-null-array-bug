@@ -1,0 +1,17 @@
+{
+  "name": "prisma-non-null-array-bug",
+  "scripts": {
+    "start": "prisma generate --no-hints && tsx src/index.ts"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@prisma/adapter-pg": "^6.19.0",
+    "@prisma/client": "^6.19.0",
+    "prisma": "^6.19.0",
+    "tsx": "^4.20.6"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0"
+  }
+}

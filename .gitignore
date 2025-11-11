@@ -1,0 +1,5 @@
+.DS_Store
+.history
+node_modules/
+prisma/migrations
+src/generated/
