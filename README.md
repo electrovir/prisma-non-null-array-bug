@@ -14,3 +14,7 @@
 
 1. Rows can be created with a `null` array field (the SQL migration does not mark the field as non null), even though the schema defined the field as not-null.
 2. Rows with a `null` array field values cannot be quired directly with a `null` value.
+
+## Workaround
+
+Add `@default([])` to the array field.
