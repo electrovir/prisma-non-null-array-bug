@@ -1,5 +1,7 @@
 # prisma-non-null-array-bug
 
+Filed in the Prisma repo: https://github.com/prisma/prisma/issues/28509
+
 ## Setup
 
 1. spin up a postgres server with Docker:
